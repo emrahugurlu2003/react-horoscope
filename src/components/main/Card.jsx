@@ -8,6 +8,7 @@ const Card = ({ title, date, image, desc }) => {
       <div className="date">
         <h2>{date}</h2>
       </div>
+      <img src={image} alt="" />
       <img src="" alt="" />
       <div className="card-over">
         <p>{desc}</p>
