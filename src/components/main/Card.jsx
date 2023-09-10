@@ -1,16 +1,16 @@
-const Card = (props) => {
-  console.log("incoming prop:", props);
+const Card = ({ title, date, image, desc }) => {
+  console.log("incoming prop:", { title, date, image, desc });
   return (
     <div className="cards">
       <div className="title">
-        <h1>{props.item.title}</h1>
+        <h1>{title}</h1>
       </div>
       <div className="date">
-        <h2>{props.item.date}</h2>
+        <h2>{date}</h2>
       </div>
       <img src="" alt="" />
       <div className="card-over">
-        <p>{props.item.description}</p>
+        <p>{desc}</p>
       </div>
     </div>
   );

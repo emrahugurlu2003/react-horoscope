@@ -4,7 +4,7 @@ const Main = () => {
   console.log(data);
   return (
     <div className="card-container">
-      {data && data.map((item) => <Card key={item.id} item={item} />)}
+      {data && data.map((item) => <Card key={item.id} {...item} />)}
     </div>
   );
 };
