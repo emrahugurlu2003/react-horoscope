@@ -1,12 +1,11 @@
-import Card from "./Card"
-
-
+import data from "../../helper/data";
+import Card from "./Card";
 const Main = () => {
+  console.log(data);
   return (
-    <div>Main
-      <Card/>
+    <div className="card-container">
+      {data && data.map((item) => <Card key={item.id} item={item} />)}
     </div>
-  )
-}
-
-export default Main
+  );
+};
+export default Main;
